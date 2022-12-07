@@ -1,0 +1,23 @@
+.axe{
+  display: flex;
+  flex: 1;
+}
+
+.axe-x{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.axe-y{
+
+}
+
+.point{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}

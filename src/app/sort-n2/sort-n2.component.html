@@ -1,0 +1,15 @@
+<input type="number" aria-label="length" placeholder="length" [(ngModel)]="length" >
+<input type="number" aria-label="min" placeholder="min" [(ngModel)]="min" >
+<input type="number" aria-label="max" placeholder="max" [(ngModel)]="max" >
+<input type="number" aria-label="speed" placeholder="speed" [(ngModel)]="speed" >
+<button (click)="onSort()">sort</button>
+
+<div class="axe">
+  <div class="axe-x" *ngFor="let x of array; let idx = index;">
+    <div class="axe-y"  *ngFor="let y of [].constructor(x)">
+      <div class="point" [ngStyle]="{'background':this.getItemColor(idx)}">
+        {{x}}
+      </div>
+    </div>
+  </div>
+</div>
